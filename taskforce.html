@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Portal (Task Force)| Troll Industries</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <h3>Welcome to the Task Force Portal</h3>
+        <p></p>
+        <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordBox");
+            var passwordText = password.value;
+            if(passwordText == "A2i9%Sf90a") {
+             return true;
+            }
+            var errormsg = "Incorrect username or password."
+            console.log(errormsg)
+            alert(errormsg)
+            return false
+        }
+        </script>
+        <h1>Task Force by Troll Industries</h1>
+        <img src="favicon.png" height="80" width="80">
+        <br></br>
+        <form method="contact">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+            <p>Password:<input id="passwordBox" type="password"/></p>
+            <a onclick="return checkPassword();" href="loadstring.html">Get loadstring</a>
+        </form>
+    </body>
+</html>
